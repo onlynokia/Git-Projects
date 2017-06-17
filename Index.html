@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+
+<meta charset="utf8">
+
+<style type="text/css">
+	
+	#Ime{position: relative;
+		 right: 330px;
+		 z-index:1;
+		 top:-220px;}
+
+	#Prezime{position: relative;
+		 right: 370px;
+		 z-index:1;
+		 top:-170px;}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+<form>
+	Ime:<input id="in" type="text" name="username"/>
+	Prezime:<input id="ins" type="text" name="password"/>
+
+	<input type="button" name="dugme" value="OK" onclick="pozovi()">
+
+</form>
+
+
+<div id="pozivnica">
+<img src="pozivnica.jpg"/>
+	<span id="Ime"></span>
+    <span id="Prezime"></span>
+</div>
+
+
+
+<script>
+
+
+function pozovi(){
+	var reda = document.getElementById("in").value;
+	var dare = document.getElementById("ins").value;
+
+	document.getElementById("Ime").innerHTML = reda;
+	document.getElementById("Prezime").innerHTML = dare;
+
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>
